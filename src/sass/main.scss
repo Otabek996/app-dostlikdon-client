@@ -1,0 +1,28 @@
+/******************** COLORS STYLE *********************/
+
+$color-green: #008F48;
+$color-footer: #5D5D5D;
+$color-back: #FAFAFA;
+
+/******************* MAIN STYLES ********************/
+
+.NavBar{
+  .container-fluid{
+    .container{
+      .row{
+        .navbar{
+          .col-2{
+            .navbar-brand{
+              Link{
+                font-weight: 600;
+                font-size: 22px;
+                color: #008F48;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
