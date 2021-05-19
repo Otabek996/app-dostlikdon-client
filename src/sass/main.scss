@@ -26,3 +26,63 @@ $color-back: #FAFAFA;
   }
 }
 
+.admin-layout{
+  display: flex;
+  height: 100vh;
+  .admin-layout-left{
+    width: 250px;
+    height: 100%;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+
+    .user-image{
+      padding: 30px 10px;
+      img{
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+      }
+      h5{
+        font-size: 16px;
+      }
+    }
+    .nav{
+      .nav-item{
+        .nav-link{
+          color: #888;
+          font-size: 15px;
+          padding-left: 30px;
+          position: relative;
+
+          &:after{
+            content: '';
+            height: 0;
+            width: 4px;
+            background-color: #f61e2e;
+            transition: all 0.5s linear;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+          }
+          &:hover, &.active{
+            color: #000;
+            &:after{
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .admin-layout-right{
+    width: calc(100% - 250px);
+    height: 100%;
+    background-color: #f2f4f8;
+    overflow-y: auto;
+    padding: 30px;
+  }
+}
